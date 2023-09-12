@@ -5,19 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixies</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
     
     <h1>Pixies</h1>
+    <h3>Pixel Art Creator by SeanyB4</h3>
 
     <div id="window">
         <canvas id="canvas" width="1000" height="1000"></canvas>
         <div id="buttons">
-            <button>Show Grid</button>
-            <button>Load Image</button>
-            <input type="file" id="imageUpload" accept="image/*">
-            <input type="color" id="colorPicker">
-            <input type="number" id="gridSizePicker" placeholder="Choose grid size..." min="1" max="20" step="1">
+            <h3>Controls</h3>
+            <div id="controls">
+                <button id="gridDisplayButton">Show Grid</button>
+                <button>Load Image</button>
+                <button id="exportButton">Export PNG</button>
+                <input type="file" id="imageUpload" accept="image/*">
+                <input type="color" id="colorPicker">
+                <input type="number" id="gridSizePicker" placeholder="Choose grid size..." min="1" max="20" step="1">
+            </div>
+
+            <h3>Tools</h3>
+
+            <div id="tools">
+
+                <button id="paint">Paint</button>
+                <button id="eraser">Eraser</button>
+                
+
+            </div>
+            
         </div>
 
     </div>
