@@ -11,8 +11,11 @@
 </head>
 <body>
     
-    <h1>Pixies</h1>
-    <h3>Pixel Art Creator by SeanyB4</h3>
+    <header class="header">
+        <h1>Pixies</h1>
+        <h5>Pixel Art Creator by SeanyB4</h5>
+    </header>
+    
 
     <div id="window">
         <canvas id="canvas" width="1000" height="1000"></canvas>
@@ -25,6 +28,7 @@
                 <input type="file" id="imageUpload" accept="image/*">
                 <input type="color" id="colorPicker">
                 <input type="number" id="gridSizePicker" placeholder="Choose grid size..." min="1" max="20" step="1">
+                <button id="fillBackgroundButton">Fill Background</button>
             </div>
 
             <h3>Tools</h3>
@@ -33,7 +37,7 @@
 
                 <button id="paint">Paint</button>
                 <button id="eraser">Eraser</button>
-                
+
 
             </div>
             

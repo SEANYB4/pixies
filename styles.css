@@ -18,6 +18,13 @@
     
 }
 
+#tools {
+
+    padding: 1rem;
+    border: 2px solid black;
+    
+}
+
 #window {
 
 
@@ -37,4 +44,12 @@ body {
 
     background-color: cornflowerblue;
     font-family: 'Press Start 2P', cursive;
+}
+
+
+.header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

@@ -48,6 +48,16 @@ function handleImageUpload(event) {
 
 
 
+// fill background
+
+let fillBackgroundButton = document.getElementById('fillBackgroundButton');
+fillBackgroundButton.addEventListener('click', (event) => {
+
+
+    console.log('fill');
+
+})
+
 // display grid
 
 let gridDisplayButton = document.getElementById('gridDisplayButton');
@@ -72,7 +82,8 @@ colorPicker.addEventListener('change', (event) => {
 let gridSizePicker = document.getElementById('gridSizePicker');
 gridSizePicker.addEventListener('change', (event) => {
 
-    // gridSize = event.target.value;
+    gridSize = parseInt(event.target.value);
+    drawGrid();
     
 })
 
